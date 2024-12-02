@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>WitFlix</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   <!--
+   1- header oluştur 
+        1.1 headera logoyu ekle img.logo
+        1.2 nav ekle 
+             1.2.1 nav içerisinde 4 tane topic ekle
+        1.3 classı search olan bir div ekle 
+            1.3.1  input ile arama çubuğu ekle 
+            1.3.2 bell classı olan bir i ekle (i.bell)
+            1.3.3 bir profil ikonu ekle classı profile olsun (img.profile)
+            --> 
+            <header class="header-content">
+                <img class="logo" src="Witflix-image/witflix-logo.png" alt="">
+                <nav class="topic">
+                    <a href="witflix/anasayfa">Ana Sayfa</a>
+                    <a href="witflix/diziler">Diziler</a>
+                    <a href="witflix/filmler">Filmler</a>
+                    <a href="witflix/listem">Listem</a>
+                </nav>
+                <div class="search">
+                    <div class="search-bar">
+                    <input  type="text" placeholder="Search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                    <i class="fas fa-bell"></i>
+                    <img class="profile" src="Witflix-image/kullanici.webp" alt="profil fotoğrafı">
+            </div>
+            </header>
+            <!--
+    2- main oluştur
+        2.1 classı hero-content olan bir div oluştur
+            2.1.1 bu divins içinde h1 tagı ile filmin adını ekle
+            2.1.2 movie-info classı olan bir div oluştur
+                2.1.2.1 user-ratings classı olan bir div oluştur 
+                    2.1.2.1.1 classı user-rating olan bir span oluştur
+                    2.1.2.1.2 classı imdb-rating olan bir span oluştur
+            2.1.3 filmin açıklamasını yazmak için bir p oluştur  
+            2.1.4 classı movie-details olan sıralı olmayan bir liste oluştur (ul.movie-details)    
+                2.1.4.1 li açıp span ile maddeleri ekle (başroller,yapımcı ve yönetmen, tür)
+            2.1.5 btn ve btn-lg classlarına sahip bir div oluştur ve butonu ekle
+            -->
+            <main>
+                <div class="main-hepsi">
+                <!--   2- main oluştur
+               2.1 classı hero-content olan bir div oluştur
+                   2.1.1 bu divin içinde h1 tagı ile filmin adını ekle
+                   2.1.2 movie-info classı olan bir div oluştur
+                       2.1.2.1 user-ratings classı olan bir div oluştur 
+                           2.1.2.1.1 classı user-rating olan bir span oluştur
+                           2.1.2.1.2 classı imdb-rating olan bir span oluştur
+                   2.1.3 filmin açıklamasını yazmak için bir p oluştur  
+                   2.1.4 classı movie-details olan sıralı olmayan bir liste oluştur (ul.movie-details)    
+                       2.1.4.1 li açıp span ile maddeleri ekle (başroller,yapımcı ve yönetmen, tür)
+                   2.1.5 btn ve btn-lg classlarına sahip bir div oluştur ve butonu ekle
+                   -->
+                   <div class="hero-content">
+                       <h1>ALTERED CARBON</h1>
+                       <div class="movie-info">
+                       
+                                 <img class="rating" src="Witflix-image/user-rating.png"></span> 
+                                   <span class="imdb-rating">7.9 IMDB</span>
+                              
+                                   <span class="maturity-rating">+18</span>
+                                   <span class="duration">2 Sezon</span>
+                           </div>
+                       </div>
+
+                       <p>
+                        İnsan zihninin dijitalleştirildiği ve bir bedenden diğerine indirilebildiği bir <br>
+                         gelecekte, dünyanın en zengin insanı olan Laurens Bancroft (James Purefoy) bir cinayete <br>
+                          kurban gider ve kendi ölümünü araştırması için, eski Elçi askeri <br>
+                           Takeshi Kovacs'ı (Joel Kinnaman / Will Yun Lee) hayata döndürür. <br>
+                        Buzda geçen 250 yıldan sonra yeni bir vücutta dirilen bir mahkûm,<br>
+                           özgürlüğünü geri kazanmak için akılalmaz bir cinayeti çözmek zorundadır.
+                       </p>
+       
+                       <ul class="movie-details">
+                           <li><span>Başroller: </span><a href="anthony.mackie/main">Anthony Mackie</a> , <a
+                                   href="lela.loren/main">Lela Loren</a> , <a class="white" href="simone.missick/main">Simone Missick</a>
+                           </li>
+                           <li><span >Yapımcı ve Yönetmen: </span><a class="white" href="laeta.kalogridis">Laeta Kalogridis</a> ,
+                               <a href="andy.goddard">Andy Goddard</a></li>
+                           <li><span >Tür:</span><a class="white" href="witflix.com/bilimkurgu">Bilim Kurgu</a> , <a
+                                   href="witflix.com/aksiyon">Aksiyon</a></li>
+                       </ul>
+                       <div class="play-now">
+                           <button class="btn btn-lg">
+                               <i><img class="play" src="Witflix-image/youtube-icon.png" alt=""></i>
+                               <i>Play Now</i>
+                           </button>
+                       </div>
+                   </div>
+                </div>
+               </main>
+            <!--
+    3- sectionu oluştur
+        3.1 suggestion-row classına sahip 3 tane div oluştur
+            3.1.1 bu divlerin içine classı suggestion-title aç
+                3.1.1.1 h2 tagi ile başlık gir 
+                3.1.1.2 a ile bir yönlendirme oluştur
+            3.1.2 bu divlerin içine suggestion-content classı olan bir div aç 
+                3.1.2.1 suggestion-item classında 3 tane div oluştur 
+                    3.1.2.1.1 suggestion-item-content classında bir div oluştur
+                        3.1.2.1.1.1 h3 ile başlık gir 
+                        3.1.2.1.1.2 suggestion-details classında bir div aç 
+                        3.1.2.1.1.3 btn ve btn-md classlarına ait bir div ekle
+-->
+<section>
+    <div class="section-row">
+        <div class="section-header">
+            <h2>Popüler Filmler</h2>
+            <a href="view.all">View All</a>
+        </div>
+        <div class="suggestion-item">
+            <h3>THE GODFATHER</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">2 h 55 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+        <div class="suggestion-item">
+            <h3>THE SHAWSHANK REDEMPTION</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">2 h 15 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+        <div class="suggestion-item">
+            <h3>FIGHT CLUB</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">2 h 03 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+    </div>
+
+    <div class="section-row">
+        <div class="section-header">
+            <h2>Senin İçin Önerilenler</h2>
+            <a href="view.all">View All</a>
+        </div>
+        <div class="suggestion-item">
+            <h3>FORREST GUMP</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">2 h 23 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+        <div class="suggestion-item">
+            <h3>THE PRESTIGE</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">1 h 48 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+        <div class="suggestion-item">
+            <h3>PARASITE</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">3 h 11 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+    </div>
+
+    <div class="section-row">
+        <div class="section-header">
+            <h2>Gündemdekiler</h2>
+            <a href="view.all">View All</a>
+        </div>
+        <div class="suggestion-item">
+            <h3>DUNE: PART TWO</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">1 h 58 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+        <div class="suggestion-item">
+            <h3>GODZILLA X KONG</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">2 h 02 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+        <div class="suggestion-item">
+            <h3>A QUIET PLACE: DAY ONE</h3>
+            <div class="suggestion-details">
+                <span class="maturity-rating">+18</span>
+                <span class="duration">2 h 25 min</span>
+            </div>
+            <button class="btn btn-md">
+                <img src="Witflix-image/youtube-icon.png" alt="">
+                Play Now
+            </button>
+        </div>
+    </div>
+</section>
+
+                        <!--
+    4- footeri oluştur
+        4.1 3 tane div oluştur 
+            4.1.1 
+         -->          
+
+                </body>
