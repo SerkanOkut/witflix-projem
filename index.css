@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Aria,sans-serif;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #ffffff;
+    color:  #000000;
+    padding: 0.5rem;
+
+}
+.logo img {
+    height:100px;
+    margin: 0;
+}
+
+
+header nav {
+    width: 30%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    gap: 5px;
+}
+header nav a {
+    text-decoration: none;
+    color: #000000  ;
+   
+}
+.header-right img{
+    height: 40px;
+    border-radius: 50%;
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    height: 800px;
+    background-image: url(Witflix-image/alteredcarbon.jpg);
+    background-position: top;
+    color: white;
+    margin: 1%;
+}
+
+h1 { margin-top: 100px;
+    font-size: 100px;
+    font-family: trajan;
+}
+.movie-info{
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+    gap: 30px;
+}
+.maturity-rating{
+    border: 1px solid white;
+    border-radius: 10%;
+}
+p {
+margin: 30px;
+font-weight: bold;
+line-height: 1.3;
+}
+.movie-details span{
+    font-weight: bold;
+}
+.movie-details a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.movie-details a:hover {
+    color: red;
+    font-weight: bold;
+}
+.play{
+    background-color: red;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.play:hover{
+    font-weight: bold;
+    color: #000000;
+}
+.movie-details ul {
+    line-height: 1.8;
+    list-style-type: none;
+}
